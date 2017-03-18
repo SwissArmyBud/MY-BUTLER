@@ -8,5 +8,3 @@ sudo unzip openhab-download.zip -d /opt/openhab2
 rm openhab-download.zip
 
 sudo chown -hR openhab:openhab /opt/openhab2
-
-sudo su -s /bin/bash -c '/opt/openhab2/start.sh' openhab
