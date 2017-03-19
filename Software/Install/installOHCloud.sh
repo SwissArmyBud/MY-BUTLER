@@ -2,28 +2,23 @@
 
 echo ""
 echo ""
+echo " --> DOWNLOADING OPENHAB CLOUD"
 echo ""
-echo " -----##########################-----"
-echo " -----### INSTALLING COHORTS ###-----"
-echo " -----##########################-----"
-echo ""
-sudo ./Scripts/installCloudReqs.sh
+cd ~
+sudo git clone https://github.com/openhab/openhab-cloud.git OHCloud
 echo ""
 
 echo ""
 echo ""
-echo " -----#########################-----"
-echo " -----### INSTALLING NODEJS ###-----"
-echo " -----#########################-----"
+echo " --> INSTALLING OPENHAB CLOUD"
 echo ""
-sudo ./Scripts/installNode.sh
+cd ./OHCloud
+sudo npm install
 echo ""
 
 echo ""
 echo ""
-echo " -----################################-----"
-echo " -----### INSTALLING OPENHAB CLOUD ###-----"
-echo " -----################################-----"
+echo " --> CREATING INITIAL CONFIGURATION"
 echo ""
-sudo ./Scripts/installOHCloud.sh
+sudo cp config-production.json config.json
 echo ""
