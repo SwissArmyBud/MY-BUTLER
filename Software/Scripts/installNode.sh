@@ -11,5 +11,6 @@ echo ""
 echo ""
 echo " --> INSTALLING NODEJS"
 echo ""
-sudo apt-get install nodejs npm -y
+sudo apt-get install npm -y
+sudo apt-get install nodejs -y
 echo ""

@@ -15,3 +15,10 @@ echo ""
 cd ./OHCloud
 sudo npm install
 echo ""
+
+echo ""
+echo ""
+echo " --> CREATING INITIAL CONFIGURATION"
+echo ""
+sudo cp config-production.json config.json
+echo ""
