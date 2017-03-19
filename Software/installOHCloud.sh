@@ -7,7 +7,7 @@ echo " -----##########################-----"
 echo " -----### INSTALLING COHORTS ###-----"
 echo " -----##########################-----"
 echo ""
-sudo ./Install/installCloudReqs.sh
+sudo ~/MYBUTLER/Software/Install/installCloudReqs.sh
 echo ""
 
 echo ""
@@ -16,7 +16,7 @@ echo " -----#########################-----"
 echo " -----### INSTALLING NODEJS ###-----"
 echo " -----#########################-----"
 echo ""
-sudo ./Install/installNode.sh
+sudo ~/MYBUTLER/Software/Install/installNode.sh
 echo ""
 
 echo ""
@@ -25,5 +25,5 @@ echo " -----################################-----"
 echo " -----### INSTALLING OPENHAB CLOUD ###-----"
 echo " -----################################-----"
 echo ""
-sudo ./Install/installOHCloud.sh
+sudo ~/MYBUTLER/Software/Install/installOHCloud.sh
 echo ""
