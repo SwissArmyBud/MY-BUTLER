@@ -1,5 +1,6 @@
 #! /bin/sh
 
+cd ~/OHCloud
 mongodump
 
 for f in ./dump/openhab/*bson
