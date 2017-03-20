@@ -1,23 +1,17 @@
 #! /bin/bash
 
+# INSTALL ALL SUPPORTING SOFTWARE
 echo ""
 echo ""
 echo ""
-echo "  -----########################-----"
-echo "  -----### INSTALLING JAVA8 ###-----"
-echo "  -----########################-----"
+echo " -----###############################-----"
+echo " -----### INSTALLING REQUIREMENTS ###-----"
+echo " -----###############################-----"
 echo ""
-sudo ~/MYBUTLER/Software/Install/installJava8.sh
+sudo ~/MYBUTLER/Software/Install/installOH2Reqs.sh
+echo ""
 
-echo ""
-echo ""
-echo ""
-echo "  -----############################-----"
-echo "  -----### INSTALLING MOSQUITTO ###-----"
-echo "  -----############################-----"
-echo ""
-sudo ~/MYBUTLER/Software/Install/installMQTT.sh
-
+# INSTALL OpenHAB2
 echo ""
 echo ""
 echo ""

@@ -1,24 +1,18 @@
 #! /bin/bash
 
+# INSTALL ALL SUPPORTING SOFTWARE
 echo ""
 echo ""
 echo ""
-echo " -----##########################-----"
-echo " -----### INSTALLING COHORTS ###-----"
-echo " -----##########################-----"
+echo " -----###############################-----"
+echo " -----### INSTALLING REQUIREMENTS ###-----"
+echo " -----###############################-----"
 echo ""
 sudo ~/MYBUTLER/Software/Install/installCloudReqs.sh
 echo ""
 
+# INSTALL OpenHAB Cloud
 echo ""
-echo ""
-echo " -----#########################-----"
-echo " -----### INSTALLING NODEJS ###-----"
-echo " -----#########################-----"
-echo ""
-sudo ~/MYBUTLER/Software/Install/installNode.sh
-echo ""
-
 echo ""
 echo ""
 echo " -----################################-----"
