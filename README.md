@@ -51,7 +51,7 @@ The ESP01 breakout is designed to provide a full (manual) reset and programing p
 When a single port each for I/O is not enough, or the requirements of the attached device dictate that no floating is allowed on control pins, the ESP12(F) breakout provides a much larger set of functions. The breakout can be used to interface with a large number of electronic sensors, and several pins (BUT NOT THE ADC) can be reconfigured in software to provide even more flexibility for demanding applications.
  The ESP12(F) breakout is designed to provide the following features:
  * Power management system - converts from system-wide 5v to ESP8266 required 3.3v
- * Fully [datasheet compliant interfaces,](Documentation/ESP-12F.pdf#page=14) including:
+ * Fully [datasheet compliant interfaces,](http://espressif.com/sites/default/files/documentation/0a-esp8266ex_datasheet_en.pdf#page=17) including:
    * GPIO x2
      * No pins float - all control I/O pinned to line voltage
    * ADC x1
