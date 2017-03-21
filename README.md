@@ -1,14 +1,14 @@
 ﻿![Image][logo]
 
-# Welcome To The MYBUTLER Project
+# Welcome To The MY-BUTLER Project
 
 
 ## Concept
 
- This project is an attempt to create a modern and complete home-automation solution in the Open Source realm by combining several other OSS projects and forming a set of hardware components to match. The following is a general overview of all the separate pieces that form the MYBUTLER system.
+  This project is an attempt to create a modern and complete home-automation solution in the Open Source realm by combining several other OSS projects and forming a set of hardware components to match. The following is a general overview of all the separate pieces that form the MYBUTLER system.
 
 
-##Components
+## Components
 
 ### Software 
 
