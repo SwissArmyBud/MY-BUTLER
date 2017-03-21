@@ -10,7 +10,7 @@
 
 ## Components
 
-### **Software**
+### **Software** Software
 
 #### Overview
  The software environment for the MYBUTLER project spans both the local networks, as well as the cloud. The local network (OpenHAB 2) software must have an always-on server running inside the house, preferably a low-energy unit like a Raspberry Pi, etc. This server is responsible for the command and control structure, including the item/map configurations for each house and the web GUI for accessing the system. The MQTT broker and ESP8266 IDE are also both mandatory for completing the MYBUTLER system, but the cloud service can be omitted if the user wishes. Forgoing OpenHAB Cloud will remove a large amount of functionality when the user is not connected to their home network, however, and installation/configuration of this service is highly encouraged.
