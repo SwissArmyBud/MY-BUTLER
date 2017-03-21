@@ -53,7 +53,7 @@
  * Power management system - converts from system-wide 5v to ESP8266 required 3.3v
  * Fully [datasheet compliant interfaces,](/Documentation/ESP-12F.pdf#page=14) including:
    * GPIO x2
-     * No pins float - all control I/O pinned hard to line voltage
+     * No pins float - all control I/O pinned to line voltage
    * ADC x1
      * Support for 1024 levels, max @ 1.0 volts
    * Serial (TX, RX)
