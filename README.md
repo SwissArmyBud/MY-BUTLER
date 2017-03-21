@@ -60,7 +60,7 @@
    * SPI (MOSI, MISO, CLK, CS)
    * I2C (SDA, SCL, VCC, GND)
    * IR (TX, RX)
- * Learning remote capable
+     * Learning remote capable
  * Power and Activity/Heartbeat LEDs
  * Full (manual) reset and programming methods
  * Voltage splitting circuit for wide-voltage ADC handling
