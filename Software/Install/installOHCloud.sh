@@ -14,7 +14,7 @@ echo ""
 echo ""
 echo "   --> *INSTALLING OPENHAB CLOUD*"
 echo ""
-cd ./OHCloud
+cd ~/OHCloud
 sudo npm install
 echo ""
 
