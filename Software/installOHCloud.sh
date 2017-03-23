@@ -8,7 +8,7 @@ echo " -----###############################-----"
 echo " -----### INSTALLING REQUIREMENTS ###-----"
 echo " -----###############################-----"
 echo ""
-sudo bash ~/MYBUTLER/Software/Install/installCloudReqs.sh
+sudo bash ~/MYBUTLER/Software/Install/installOHCloudReqs.sh
 echo ""
 
 # INSTALL OpenHAB Cloud
