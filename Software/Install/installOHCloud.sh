@@ -26,3 +26,12 @@ echo ""
 sudo cp config-production.json config.json
 echo ""
 echo "   --> *CONFIGURATION FINISHED*"
+
+# ENSURE OpenHAB Cloud HAS WORKING app.js (CSRF fix)
+echo ""
+echo ""
+echo "   --> *USING LEGACY app.js TO FIX CSRF*"
+echo ""
+sudo cp ~/MYBUTLER/Software/Configuration/app.js ./
+echo ""
+echo "   --> *CONFIGURATION FINISHED*"
