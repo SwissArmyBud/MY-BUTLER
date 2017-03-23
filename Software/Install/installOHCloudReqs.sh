@@ -1,5 +1,13 @@
 #! /bin/bash
 
+# REDIS-SERVER VERSION CONFIGURATION
+echo ""
+echo ""
+echo "  --> *CONFIGURING REDIS-SERVER INSTALL VERSION*"
+echo ""
+sudo add-apt-repository ppa:chris-lea/redis-server
+echo ""
+
 # UPDATE APT WITH NEW REPOSITORY PACKAGES
 echo ""
 echo ""
@@ -39,8 +47,3 @@ echo "  --> *INSTALLING NODE*"
 echo ""
 sudo apt-get install nodejs -y
 echo ""
-
-
-
-
-
