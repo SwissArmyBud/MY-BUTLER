@@ -1,13 +1,5 @@
 #! /bin/bash
 
-# ADD MQTT REPO
-echo ""
-echo ""
-echo "   --> *ADDING MOSQUITTO REPOSITORY*"
-echo ""
-sudo apt-add-repository ppa:mosquitto-dev/mosquitto-ppa -y
-echo ""
-
 # ADD JAVA WEBUPD8 REPO
 echo ""
 echo ""
