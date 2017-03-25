@@ -9,3 +9,7 @@ for f in ./dump/openhab/*bson
 done
 
 cat ./dump/openhab/emailVerifications.bson.json
+
+echo ""
+echo "To activate, follow link format below and submit from browser:"
+echo "http<s>://<IP/DNS>/verify?code=<CODE>"
