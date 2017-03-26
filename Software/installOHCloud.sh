@@ -1,4 +1,8 @@
-#!/usr/bin/env bash
+#! /bin/bash
+
+# GO HOME
+USER_HOME=$(getent passwd $SUDO_USER | cut -d: -f6)
+cd $USER_HOME
 
 # INSTALL ALL SUPPORTING SOFTWARE
 echo ""
@@ -8,7 +12,7 @@ echo " -----###############################-----"
 echo " -----### INSTALLING REQUIREMENTS ###-----"
 echo " -----###############################-----"
 echo ""
-sudo source ~/MYBUTLER/Software/Install/installOHCloudReqs.sh
+source ./MYBUTLER/Software/Install/installOHCloudReqs.sh
 echo ""
 
 # INSTALL OpenHAB Cloud
@@ -19,5 +23,5 @@ echo " -----################################-----"
 echo " -----### INSTALLING OPENHAB CLOUD ###-----"
 echo " -----################################-----"
 echo ""
-sudo source ~/MYBUTLER/Software/Install/installOHCloud.sh
+source ./MYBUTLER/Software/Install/installOHCloud.sh
 echo ""
