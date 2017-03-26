@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/usr/bin/env bash
 
 # GO HOME
 cd ~
@@ -11,7 +11,7 @@ echo " -----###############################-----"
 echo " -----### INSTALLING REQUIREMENTS ###-----"
 echo " -----###############################-----"
 echo ""
-sudo bash ./MYBUTLER/Software/Install/installOH2Reqs.sh
+sudo source ~/MYBUTLER/Software/Install/installOH2Reqs.sh
 echo ""
 
 # INSTALL OpenHAB2
@@ -22,4 +22,4 @@ echo "  -----###########################-----"
 echo "  -----### INSTALLING OPENHAB2 ###-----"
 echo "  -----###########################-----"
 echo ""
-sudo bash ./MYBUTLER/Software/Install/installOH2.sh
+sudo source ~/MYBUTLER/Software/Install/installOH2.sh
