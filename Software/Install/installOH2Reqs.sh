@@ -7,7 +7,7 @@ echo "   --> *ADDING JAVA SDK WEBUPD8 REPOSITORY*"
 echo ""
 echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main" | tee /etc/apt/sources.list.d/webupd8team-java.list
 echo "deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main" | tee -a /etc/apt/sources.list.d/webupd8team-java.list
-apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys EEA14886
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys EEA14886
 echo ""
 
 # UPDATE APT WITH NEW REPOSITORY PACKAGES
@@ -31,6 +31,6 @@ echo ""
 echo ""
 echo "   --> *INSTALLING JAVA 8 ENVIRONMENT*"
 echo ""
-apt-get install oracle-java8-installer -y
+sudo apt-get install oracle-java8-installer -y
 echo ""
 
