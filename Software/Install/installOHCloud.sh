@@ -5,7 +5,7 @@ echo ""
 echo ""
 echo "   --> *DOWNLOADING OPENHAB CLOUD*"
 echo ""
-cd ~
+cd $USER_HOME
 sudo git clone https://github.com/openhab/openhab-cloud.git OHCloud
 echo ""
 
@@ -14,7 +14,7 @@ echo ""
 echo ""
 echo "   --> *INSTALLING OPENHAB CLOUD*"
 echo ""
-cd ~/OHCloud
+cd ./OHCloud
 sudo npm install
 echo ""
 
@@ -32,6 +32,15 @@ echo ""
 echo ""
 echo "   --> *USING LEGACY app.js TO FIX CSRF*"
 echo ""
-sudo cp ~/MYBUTLER/Software/Configuration/app.js ./
+sudo cp $USER_HOME/MYBUTLER/Software/Configuration/app.js ./
+echo ""
+echo "   --> *CONFIGURATION FINISHED*"
+
+# ENSURE OpenHAB Cloud HAS WORKING index.ejs (HTML fix)
+echo ""
+echo ""
+echo "   --> *USING MODIFIED index.ejs TO FIX HTML*"
+echo ""
+sudo cp $USER_HOME/MYBUTLER/Software/Configuration/index.ejs ./views/
 echo ""
 echo "   --> *CONFIGURATION FINISHED*"
