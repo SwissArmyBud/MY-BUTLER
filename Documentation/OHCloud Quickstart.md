@@ -5,7 +5,9 @@ The cloud service for OpenHAB 2 is a large and complicated piece of software eng
 
 ## Installation
 The install script has been tuned to work on a fresh Ubuntu 16 LTS VM from either AWS or Azure, but should work or be easily adaptable to other linux packages. All that is required to install the OpenHAB 2 cloud service, with the required additional software, is a single command:
-````sudo ~/MYBUTLER/Software/installOHCloud.sh````
+````
+sudo ~/MYBUTLER/Software/installOHCloud.sh
+````
 However, it is also highly suggested to install two additional pieces of software, which will ensure that your service is running as long as the VM is powered on, and will secure your server with industry-grade encryption:
 ````
 sudo ~/MYBUTLER/Software/Tools/enablePM2.sh

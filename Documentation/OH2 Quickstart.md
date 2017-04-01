@@ -5,7 +5,9 @@ The local client for OpenHAB 2 is meant to be a full-time home-automation server
 
 ## Installation
 The install script has been tuned to work on a blank image of Raspbian Jessie, but should work or be easily adaptable to other linux packages. All that is required to install the OpenHAB 2 runtime with the required additional software is a single command:
-  ````sudo ~/MYBUTLER/Software/installOH2.sh````
+````
+sudo ~/MYBUTLER/Software/installOH2.sh
+````
 
 ## Concepts
 The following concepts are the core of the system:
