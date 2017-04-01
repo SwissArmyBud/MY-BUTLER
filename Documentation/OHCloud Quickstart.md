@@ -18,8 +18,8 @@ __DNS RECORDS__
 
 | __NAME__ | __TYPE__ | __VALUE__ |
 | --- | --- | --- |
-| sample.domain.com | A | <SERVER IP> |
-| www.sample.domain.com | CNAME | sample.domain.com |
+| sample.domain.com | A | \<SERVER IP\> |
+| www<i></i>.sample.domain.com | CNAME | sample.domain.com |
 
 Likewise, each provider maintains their own VM security methods, but each cloud provider offers firewall configurations for their servers. For the system to work correctly the firewall settings for the cloud server need to be set as follows:
 
