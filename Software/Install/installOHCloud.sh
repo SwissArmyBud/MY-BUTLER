@@ -44,3 +44,4 @@ echo ""
 sudo cp $USER_HOME/MYBUTLER/Software/Configuration/index.ejs ./views/
 echo ""
 echo "   --> *CONFIGURATION FINISHED*"
+
