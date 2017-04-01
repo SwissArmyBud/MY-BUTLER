@@ -31,9 +31,7 @@ server {
 	client_max_body_size 300m;
 
 	# Redirect folder for holding page
-    location / {
-		alias /var/www/html;
-    }
+    root /var/www/html;
 	# Redirect folder for DNS/Domain Authorizaion
     location ~ /.well-known {
 		allow all;
@@ -77,7 +75,7 @@ server {
     # SSL configuration
     listen 443 ssl http2 default_server;
     listen [::]:443 ssl http2 default_server;
-    include snippets/ssl-example.com.conf;
+    include snippets/ssl-$DNS_NAME.conf;
     include snippets/ssl-params.conf;
 
 	# Logging
@@ -116,12 +114,12 @@ server {
 		proxy_pass http://localhost:3000;
 		proxy_redirect off;
 		proxy_http_version 1.1;
-		proxy_set_header Host $host;
-		proxy_set_header Upgrade $http_upgrade;
+		proxy_set_header Host \$host;
+		proxy_set_header Upgrade \$http_upgrade;
 		proxy_set_header Connection \"upgrade\";
 		proxy_set_header X-Real-IP \$remote_addr ;
 		proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for ;
-			proxy_set_header X-Forwarded-Proto https;
+		proxy_set_header X-Forwarded-Proto https;
 	}
 
 	# Error Pages
