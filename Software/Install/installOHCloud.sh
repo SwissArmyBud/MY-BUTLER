@@ -41,37 +41,7 @@ echo ""
 echo ""
 echo "   --> *USING MODIFIED index.ejs TO FIX HTML*"
 echo ""
-<<<<<<< HEAD
-echo ""
-echo "  --> *ENABLING PM2 SERVICE*"
-sudo pm2 startup sytemd
-sleep 2
-=======
 sudo cp $USER_HOME/MYBUTLER/Software/Configuration/index.ejs ./views/
 echo ""
 echo "   --> *CONFIGURATION FINISHED*"
 
-
-# INSTALLING PM2
-echo ""
-echo ""
-echo "  --> *INSTALLING PM2*"
-echo ""
-sudo npm install pm2 -g
-
-# CONFIGURING PM2
-echo ""
-echo ""
-echo "  --> **CONFIGURING PM2**"
-echo ""
-echo ""
-echo "  ---> *GENERATING PM2 STARTUP SCRIPT AND ENABLING PM2 SERVICE*"
-sudo pm2 startup sytemd
-echo ""
-echo ""
-echo "  ---> *STARTING OpenHAB WITH PM2*"
-pm2 start app.js
-echo ""
-echo ""
-echo " --> *VERIFYING PM2 IS RUNNING AND ENABLED*"
-sudo systemctl status pm2
