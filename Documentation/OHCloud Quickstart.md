@@ -13,13 +13,16 @@ However, it is also highly suggested to install two additional pieces of softwar
 sudo ~/MYBUTLER/Software/Tools/enablePM2.sh
 ````
 The second script is a little more complicated, but will result in a server that has industry-grade encryption (TLS 1.2 w/ EECDH+AESGCM) when the user connects from outside their network. For this to work, the cloud service must be served from a global IP address, with its own set of DNS entries in a global records provider. AWS and Azure make this simple, with their own hosted DNS, but any global DNS provider only requires the following two records:
+
 __DNS RECORDS__
 
 | __NAME__ | __TYPE__ | __VALUE__ |
 | --- | --- | --- |
 | sample.domain.com | A | <SERVER IP> |
 | www.sample.domain.com | CNAME | sample.domain.com |
+
 Likewise, each provider maintains their own VM security methods, but each cloud provider offers firewall configurations for their servers. For the system to work correctly the firewall settings for the cloud server need to be set as follows:
+
 __FIREWALL RULES__
 
 | __DIRECTION__ | __PORT__ | __SERVICE__ |
