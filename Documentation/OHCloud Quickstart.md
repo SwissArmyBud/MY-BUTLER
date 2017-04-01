@@ -12,26 +12,26 @@ However, it is also highly suggested to install two additional pieces of softwar
 ````
 sudo ~/MYBUTLER/Software/Tools/enablePM2.sh
 ````
-The second script is a little more complicated, but will result in a server that has industry-grade encryption (TLS 1.2 w/ EECDH+AESGCM) when the user connects from outside their network. For this to work, the cloud service must be served from a global IP address, with its own set of DNS entries in a global records provider. AWS and Azure make this simple, with their own hosted DNS, but any global DNS provider only requires the following two records:
+The second script is a little more complicated, but will result in a server that has industry-grade encryption (TLS 1.2 w/ EECDH+AESGCM) when the user connects from outside their network. For this to work, the cloud service must be served from a global IP address, with its own set of DNS entries in a global records provider. AWS and Azure make this simple, with their own hosted DNS, but any global DNS provider only requires the same two records:
 
 __DNS RECORDS__
 
 | __NAME__ | __TYPE__ | __VALUE__ |
-| --- | --- | --- |
+| --- | :---: | --- |
 | sample.domain.com | A | \<SERVER IP\> |
 | www<i></i>.sample.domain.com | CNAME | sample.domain.com |
 
-Likewise, each provider maintains their own VM security methods, but each cloud provider offers firewall configurations for their servers. For the system to work correctly the firewall settings for the cloud server need to be set as follows:
+Likewise, each provider maintains their own VM security methods, but each cloud provider offers firewall options for their servers. For the system to work correctly the firewall settings for the cloud server need to be set as follows:
 
 __FIREWALL RULES__
 
-| __DIRECTION__ | __PORT__ | __SERVICE__ |
-| --- | --- | --- |
-| _IN_ | 22 | SSH |
-| _IN_ | 80 | HTTP |
-| _IN_ | 443 | HTTPS |
-| _IN_ | 3000 | OpenHAB |
-| _OUT_ | ALL | ALL |
+| __DIRECTION__ | __PORT__ | __IP ADDRESS__ | __SERVICE__ |
+| :---: | :---: | :---: | :---: |
+| _IN_ | 22 | ALL | SSH |
+| _IN_ | 80 | ALL | HTTP |
+| _IN_ | 443 | ALL | HTTPS |
+| _IN_ | 3000 | ALL | OpenHAB |
+| _OUT_ | ALL | ALL | ALL |
 
 ## Concepts
 The following concepts are the core of the system:
