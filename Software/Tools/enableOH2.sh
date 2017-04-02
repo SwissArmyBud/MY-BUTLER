@@ -10,7 +10,7 @@ echo ""
 echo ""
 echo "  --> *INSTALLING SERVICE FILE*"
 echo ""
-sudo cp $USER_HOME/MYBUTLER/Software/Configuration/openhab.service /lib/systemd/system/openhab2.service
+sudo cp $USER_HOME/MYBUTLER/Software/Configuration/openhab2.service /lib/systemd/system/openhab2.service
 echo ""
 
 # CONFIGURING LINUX TO START OH2
