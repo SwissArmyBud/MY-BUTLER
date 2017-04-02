@@ -1,7 +1,15 @@
 import org.openhab.core.library.types.*
+import java.util.Date
+import java.text.SimpleDateFormat
+import java.util.Random;
 
+rule "Email Me on Switch Command"
 when
-	Item generic_switch received command ON
+	Item generic_switch changed
 then
-	sendHttpGetRequest(https://maker.ifttt.com/trigger/button/with/key/Oyzt5TghmOerBHVdt6fiB)
+	var SimpleDateFormat df = new SimpleDateFormat( "HHmmss" )
+	var String Timestamp = df.format( new Date() )
+	var fillerText = "testing_and_texting"
+	var String varVal = generic_switch.state.toString()
+	sendHttpGetRequest(("https://maker.ifttt.com/trigger/button/with/key/Oyzt5TghmOerBHVdt6fiB?value1=" + Timestamp + "&value2=" + fillerText + "&value3=" + varVal))
 end
