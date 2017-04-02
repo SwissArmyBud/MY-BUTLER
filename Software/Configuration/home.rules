@@ -1,0 +1,7 @@
+import org.openhab.core.library.types.*
+
+when
+	Item generic_switch received command ON
+then
+	sendHttpGetRequest(https://maker.ifttt.com/trigger/button/with/key/Oyzt5TghmOerBHVdt6fiB)
+end
