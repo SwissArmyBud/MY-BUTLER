@@ -5,7 +5,7 @@ USER_HOME=$(getent passwd $SUDO_USER | cut -d: -f6)
 cd $USER_HOME
 
 
-# INSTALLING OH2 SERVICE
+# INSTALLING OpenHAB 2 SERVICE
 echo ""
 echo ""
 echo "  --> *INSTALLING SERVICE FILE*"
@@ -13,7 +13,7 @@ echo ""
 sudo cp $USER_HOME/MYBUTLER/Software/Configuration/openhab2.service /lib/systemd/system/openhab2.service
 echo ""
 
-# CONFIGURING LINUX TO START OH2
+# CONFIGURING LINUX TO START OpenHAB 2 AT BOOT
 echo ""
 echo ""
 echo "  ---> *ENABLING OpenHAB 2 AS SERVICE*"
@@ -22,7 +22,7 @@ sudo systemctl daemon-reload
 sudo systemctl enable openhab2.service
 echo ""
 
-# CONFIGURING PM2 TO START AT RUNTIME
+# CHECKING STATUS OF OpenHAB 2 RUNTIME
 echo ""
 echo ""
 echo "  --> *STARTING AND CHECKING SERVICE*"
