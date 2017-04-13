@@ -22,8 +22,8 @@
 
 #### Additional Requirements:
   - _Enable MQTT Integration_
-    1. From the /MYBUTLER/Software/Arduino/ folder, copy the PubSubClient folder to your local Arduino library folder, usually _C:\Program Files (x86)\Arduino\libraries_ or _C:\Users\$CURRENT_USER\Arduino\Arduino\libraries_
+    1. From the /MYBUTLER/Software/Arduino/ folder, copy the PubSubClient folder to your local Arduino library folder, usually _C:\Program Files (x86)\Arduino\libraries_ or _C:\Users\\$CURRENT_USER\Arduino\Arduino\libraries_
 	2. In your ESP8266 program, include this line at the beginning:
-	  - ````#include <PubSubClient.h>````
+	    - ````#include <PubSubClient.h>````
 	3. Your Arduino IDE programs for the ESP can now speak the MQTT protocol!
 
