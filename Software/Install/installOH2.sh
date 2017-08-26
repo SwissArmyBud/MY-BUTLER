@@ -14,7 +14,7 @@ echo ""
 echo "  --> *GETTING OPENHAB RUNTIME*"
 echo ""
 cd /tmp
-sudo wget -O openhab-download.zip https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab%2F2.0.0%2Fopenhab-2.0.0.zip
+sudo wget -O openhab-download.zip https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab%2F2.1.0%2Fopenhab-2.1.0.zip
 echo ""
 
 # INSTALL OpenHAB RUNTIME
