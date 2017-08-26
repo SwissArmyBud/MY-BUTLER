@@ -86,28 +86,28 @@ server {
 
 	# Redirect Folders
 	location /css {
-		alias  /home/ubuntu/OHCloud/public/css;
+		alias  $USER_HOME/OHCloud/public/css;
 		}
 	location /js {
-		alias /home/ubuntu/OHCloud/public/js;
+		alias $USER_HOME/OHCloud/public/js;
 		}
 	location /img {
-		alias /home/ubuntu/OHCloud/public/img;
+		alias $USER_HOME/OHCloud/public/img;
 		}
 	location /bootstrap {
-		alias /home/ubuntu/OHCloud/public/bootstrap;
+		alias $USER_HOME/OHCloud/public/bootstrap;
 		}
 	location /font-icons {
-		alias /home/ubuntu/OHCloud/public/font-icons;
+		alias $USER_HOME/OHCloud/public/font-icons;
 		}
 	location /fonts {
-		alias /home/ubuntu/OHCloud/public/fonts;
+		alias $USER_HOME/OHCloud/public/fonts;
 		}
 	location /js-plugin {
-		alias /home/ubuntu/OHCloud/public/js-plugin;
+		alias $USER_HOME/OHCloud/public/js-plugin;
 		}
 	location /downloads {
-		alias /home/ubuntu/OHCloud/public/downloads;
+		alias $USER_HOME/OHCloud/public/downloads;
 		}
 	# Proxy Redirect for Core Route
 	location / {
