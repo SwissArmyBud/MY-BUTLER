@@ -6,7 +6,7 @@ echo ""
 echo "   --> *DOWNLOADING OPENHAB CLOUD*"
 echo ""
 cd $USER_HOME
-sudo git clone https://github.com/openhab/openhab-cloud.git OHCloud
+sudo git clone https://github.com/swissarmybud/openhab-cloud.git OHCloud
 echo ""
 
 # INSTALL OpenHAB Cloud
